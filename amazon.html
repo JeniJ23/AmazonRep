@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="./main.css"> -->
+
+<body>
+    <header>
+        <meta charset="utf-8" />
+        <title dir="ltr">JamazonSign-In</title>
+        <script></script>
+        <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/61A6IErPNXL._RC|11Fd9tJOdtL.css,11tfezETfFL.css,31Q3id-QR0L.css,31U9HrBLKmL.css_.css?AUIClients/AmazonUI#us.not-trident" />
+        <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/01SdjaY0ZsL._RC|31jdWD+JB+L.css,51ndJ60shfL.css_.css?AUIClients/AuthenticationPortalAssets" />
+        <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/21PFuszay6L.css?AUIClients/CVFAssets" />
+        <style>
+            #aa-challenge-whole-page-iframe {
+                overflow: hidden;
+                opacity: 1;
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                border: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 999999;
+            }
+        </style>
+    </head>
+
+    <body
+        class="auth-no-skin ap-locale-en_US a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-t1 a-aui_killswitch_csa_logger_372963-c a-aui_pci_risk_banner_210084-c a-aui_preload_261698-c a-aui_rel_noreferrer_noopener_309527-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-meter-animate"
+        data-new-gr-c-s-check-loaded="14.1145.0"
+        data-gr-ext-installed=""
+    >
+        <script type="text/javascript"></script>
+
+        <script>
+            window.ue && ue.count && ue.count("CSMLibrarySize", 17554);
+        </script>
+        <div id="a-page">
+            <script type="a-state" data-a-state='{"key":"a-wlab-states"}'>
+                {"AUI_ACCORDION_A11Y_ROLE_354025":"T1"}
+            </script>
+            <div class="a-section a-padding-medium auth-workflow">
+                <div class="a-section a-spacing-none auth-navbar">
+                    <div class="a-section a-spacing-medium a-text-center">
+                        <a class="a-link-nav-icon" tabindex="-1" href="/ref=ap_frn_logo">
+                            <i class="a-icon a-icon-logo" role="img" aria-label="Amazon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="authportal-center-section" class="a-section">
+                    <div id="authportal-main-section" class="a-section">
+                        <div class="a-section a-spacing-base auth-pagelet-container">
+                            <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning" aria-live="polite" aria-atomic="true">
+                                <div class="a-box-inner a-alert-container"></div>
+                            </div>
+                        </div>
+
+                        <div class="a-section auth-pagelet-container">
+                            <div class="a-section a-spacing-base">
+                                <div class="a-section">
+                                    <form name="signIn" method="post" novalidate="" action="https://www.amazon.com/ap/signin" class="auth-validate-form auth-real-time-validation a-spacing-none" data-fwcim-id="eYwGhMia">
+                                        <input type="hidden" name="appActionToken" value="JVPkA6juFDnBTYhROEs2MSzyMToj3D" /><input type="hidden" name="appAction" value="SIGNIN_PWD_COLLECT" />
+                                        <input type="hidden" name="subPageType" value="SignInClaimCollect" />
+                                        <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/cmVmXz1uYXZfeWFfc2lnbmlu" />
+
+                                        <input type="hidden" name="prevRID" value="ape:WkpUN0dFTTFGSk01VDJGS0ZHMFg=" />
+                                        <div class="a-section">
+                                            <div class="a-box">
+                                                <div class="a-box-inner a-padding-extra-large">
+                                                    <h1 class="a-spacing-small">
+                                                        Sign in
+                                                    </h1>
+                                                    <div class="a-row a-spacing-base">
+                                                        <label for="ap_email" class="a-form-label">
+                                                            Email or mobile phone number
+                                                        </label>
+
+                                                        <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field" />
+
+                                                        <input type="password" maxlength="1024" id="ap-credential-autofill-hint" name="password" class="a-input-text hide" />
+
+                                                        <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" role="alert">
+                                                            <div class="a-box-inner a-alert-container">
+                                                                <i class="a-icon a-icon-alert"></i>
+                                                                <div class="a-alert-content">
+                                                                    Enter your email or mobile phone number
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <input type="hidden" name="create" value="0" />
+
+                                                    <div class="a-section">
+                                                        <span id="continue" class="a-button a-button-span12 a-button-primary">
+                                                            <span class="a-button-inner">
+                                                                <input id="continue" tabindex="5" class="a-button-input" type="submit" aria-labelledby="continue-announce" />
+                                                                <span id="continue-announce" class="a-button-text" aria-hidden="true">
+                                                                    Continue
+                                                                </span>
+                                                            </span>
+                                                        </span>
+
+                                                        <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                                                            By continuing, you agree to Amazon's <a href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=508088">Conditions of Use</a> and
+                                                            <a href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=468496">Privacy Notice</a>.
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="a-section">
+                                                        <div class="a-row a-expander-container a-expander-inline-container">
+                                                            <a
+                                                                data-csa-c-func-deps="aui-da-a-expander-toggle"
+                                                                data-csa-c-type="widget"
+                                                                data-csa-interaction-events="click"
+                                                                aria-expanded="false"
+                                                                role="button"
+                                                                href="javascript:void(0)"
+                                                                data-action="a-expander-toggle"
+                                                                class="a-expander-header a-declarative a-expander-inline-header a-link-expander"
+                                                                data-a-expander-toggle='{"allowLinkDefault":true, "expand_prompt":"", "collapse_prompt":""}'
+                                                                data-csa-c-id="6xoxp5-wghcnf-8c58nx-esfhkv"
+                                                            >
+                                                                <i class="a-icon a-icon-expand"></i>
+                                                                <span class="a-expander-prompt">
+                                                                    Need help?
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="ab-signin-link-section" class="a-section">
+                                                        <hr aria-hidden="true" class="a-divider-normal" />
+                                                        <div class="a-section a-spacing-micro">
+                                                            <span class="a-text-bold">
+                                                                Buying for work?
+                                                            </span>
+                                                        </div>
+
+                                                        <a id="ab-sign-in-ingress-link" class="a-link-normal" href="https://www.amazon.com/business/register/welcome?ref_=ab_reg_signin">
+                                                            <span>
+                                                                Shop on Amazon Business
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="a-divider a-divider-break"><h5 aria-level="5">New to Amazon?</h5></div>
+                                <span id="auth-create-account-link" class="a-button a-button-span12 a-button-base">
+                                    <span class="a-button-inner">
+                                        <a>
+                                            Create your Amazon account
+                                        </a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-2"></div>
+
+                <div class="a-section a-spacing-top-extra-large auth-footer">
+                    <div class="a-divider a-divider-section"><div class="a-divider-inner"></div></div>
+
+                    <div class="a-section a-spacing-small a-text-center a-size-mini">
+                        <span class="auth-footer-seperator"></span>
+
+                        <a class="a-link-normal" target="_blank" rel="noopener" href="#">
+                            Conditions of Use
+                        </a>
+                        <span class="auth-footer-seperator"></span>
+
+                        <a class="a-link-normal" target="_blank" rel="noopener" href="#">
+                            Privacy Notice
+                        </a>
+                        <span class="auth-footer-seperator"></span>
+
+                        <a class="a-link-normal" target="_blank" rel="noopener" href="/help">
+                            Help
+                        </a>
+                        <span class="auth-footer-seperator"></span>
+                    </div>
+
+                    <div class="a-section a-spacing-none a-text-center">
+                        <span class="a-size-mini a-color-secondary">
+                            © 1996-2023, Amazon.com, Inc. or its affiliates
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
